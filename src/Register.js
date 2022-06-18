@@ -26,6 +26,11 @@ const Register = () =>{
 
     }
 return(
+    <div className="Container text-center">
+    <div className = "row">
+            <div className = "col-2"></div>
+            
+            <div className = "col-8">
     <form onSubmit={submit}>
     <h1 className = "fm-normal">Register</h1>
     <input type="name" id="inputName" className = "form-control" placeholder="Name" required
@@ -41,6 +46,9 @@ return(
     <button className = "btn btn-lg bt-primary" type="submit">submit </button>
 
   </form>
+  </div>
+        </div>
+        </div>
 );
 
 };

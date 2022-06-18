@@ -75,15 +75,17 @@ export default function Profile(){
 
     return(
         <>
-        <div className="Containrt text-center">
-            <p className="lead">Profile </p>
-        </div>
+        <div className="Container text-center">
+        <div className = "row">
+                <div className = "col-2"></div>
+                
+                <div className = "col-8">
 
         <form onSubmit={handleForm}>
             <div className="card">
                 <div className="card-body">
 
-                    <img src={data.imgSrc}  className="card-img-top"/>
+                    <img src={data.imgSrc} style = { {borderRadius: '50%'}} className="card-img-top"/>
                     <div className="form-group">
                         <input type = "file" className="form-control-file" 
                         onChange={showPreview}/>
@@ -120,6 +122,9 @@ export default function Profile(){
             </div>
 
         </form>
+        </div>
+        </div>
+        </div>
         </>
     )
 

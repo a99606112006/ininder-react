@@ -17,13 +17,13 @@ function Chat() {
     const id = from;
 
     const [yid , setYid] = useState('');
-    const [cid , setCid] = useState(null);
+    const [cid , setCid] = useState('');
 
     let address = 'http://localhost:8000/api/friend/' + id
 
     useEffect(() => {
 
-
+        const interval = setInterval(() => {
             (
                 async () => {
                     
@@ -44,8 +44,10 @@ function Chat() {
                     }
                 }
             )();
+        }, 1000);
+        return () => clearInterval(interval);
 
-    }, [cid,message]);
+    }, [cid]);
 
     useEffect(() => {
             

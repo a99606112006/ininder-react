@@ -36,6 +36,11 @@ const Login = ()=>{
 
   }
     return(
+      <div className="Container text-center">
+      <div className = "row">
+              <div className = "col-2"></div>
+              
+              <div className = "col-8">
       <form onSubmit={submit}>
       <h1 className = "fm-normal">Login</h1>
 
@@ -49,6 +54,9 @@ const Login = ()=>{
       <button className = "btn btn-lg bt-primary" type="submit">submit </button>
   
     </form>
+            </div>
+            </div>
+            </div>
     );
 
 };
